@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EN Resume CSS Demonstration</title>
+<meta name="description" content="A demonstration of my skillset">
+<meta name="author" content="Erick Ne...">
+<meta name="keywords" content="HTML,CSS,XML,Photoshop,Illustrator,Animator,Animation,Banners,Presentations,Charts,Instructional Design,Aviation,Research,Technical,Elecrical,Construction">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="no-index">
+
+
+<style media="screen" type="text/css">
+
+section {
+	display: block;
+	}
+
+[hidden] {
+	display: none;
+	}
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	}
+	
+body {
+	font-family: 'Open Sans', Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #0f2a36;
+	font-size: 16px;
+	line-height: 1.25em;
+	}
+
+
+#bio-pic-box {
+	  position: relative;
+	  float: right;
+	  margin: 0px 5px;
+	  overflow: hidden;
+	}
+
+#letter-box {
+	  position: relative;
+	  float: right;
+	  margin: 0px 20px;
+	  overflow: hidden;
+	}
+
+.E-letter {
+	  height: 8rem;
+	  width: 5rem;
+	  border-top: 3rem solid #E50914;
+	  border-bottom: 3rem solid #E50914;
+	  float: left;
+	}
+
+.E-letter::before {
+	  display: block;
+	  content: "";
+	  width: 60%;
+	  height: 20%;
+	  background: #E50914;
+	  position: absolute;
+	  top: 40%;
+	  margin-left: 10%;
+	  box-shadow: 0 0 30px;
+	  overflow: hidden;
+	}
+
+.N-letter {
+	  height: 14rem;
+	  width: 3rem;
+	  border-left: 3rem solid #E50914;
+	  border-right: 3rem solid #E50914;
+	  float: right;
+	}
+
+.N-letter::before {
+	  display: block;
+	  content: "";
+	  width: 100%;
+	  height: 100%;
+	  background: #E50914;
+	  transform: skewX(21.5deg);
+	  box-shadow: 0 0 30px;
+	  overflow: hidden;
+	}
+	
+#print-pic-box {
+	display: none;
+	}
+
+#whole-border {
+	margin: 0 auto;
+	width: 500px;
+	}
+
+#whole-background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	
+background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+	z-index: -5;
+	}
+
+#cross { 
+	background: red;
+	height: 100%;
+	width: 20px; 
+	position: fixed; 
+	top: 0px;
+	right: 330px;
+	z-index: -1;
+	opacity: 0.5;
+	}
+
+#cross:after {
+	background: red;
+	content: ""; 
+	height: 20px; 
+	top: 33px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+	}
+
+#cross-2 { 
+	background: red;
+	content: ""; 
+	height: 20px; 
+	top: 330px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+	}
+
+#white-cross { 
+	background: white;
+	content: ""; 
+	height: 20px; 
+	top: 322px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: -2;
+	opacity: 0.5;
+	}
+	
+#red-cross-2 { 
+	background: red;
+	height: 100%;
+	width: 20px; 
+	position: fixed; 
+	top: 0px;
+	right: 322px;
+	z-index: -4;
+	opacity: 0.5;
+	}
+
+h1 {
+	font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 2.0em;
+	font-weight: 500;
+	}
+	
+h2 {
+	color: #dd3b2a;
+	font-size: 2.3em;
+	font-style: italic;
+	font-weight: 400;
+	}
+	
+h3 {
+	font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	color: #dd3b2a;
+	font-size: 2.0em;
+	font-weight: 500;
+	line-height: 1.0em;
+	margin: 1px;
+	}
+	
+h3 + p {
+	margin-top: 0;
+	}
+	
+p {
+	margin-top: 0;
+	}
+
+a {
+	color: #2babe1;
+	text-decoration: none;
+	}
+	
+a:focus {
+	outline: thin dotted;
+	}
+	
+a:link {
+	font-weight: 600;
+	text-decoration: none;
+	color: #000000;
+	}
+	
+a:visited {
+	font-weight: 600; 
+	text-decoration: none; 
+	color: #676767;
+	}
+	
+a:hover, a:active {
+	font-weight: 600;
+	text-decoration: underline; 
+	color: #676767;
+	}
+	
+p {
+	margin-top: 0;
+	}
+	
+#contact {
+	background: #222222;
+	}
+
+.content-box-1 {
+	background: #FFFFFF;
+	padding: 40px;
+	text-align: left;
+	margin: 10px;
+	width: 480px;
+	float: left;
+	border-radius: 20px;
+	box-shadow: -3px -3px 0px #111111 inset;
+	z-index: 10;
+	}
+
+.ext-content-box-1 {
+	background: #FFFFFF;
+	padding: 40px;
+	text-align: left;
+	margin: 10px;
+	width: 480px;
+	float: left;
+	border-radius: 20px;
+	box-shadow: -3px -3px 0px #111111 inset; 
+	z-index: 10;
+	}
+	
+#work-history-box {
+	background: #FFFFFF;
+	padding: 40px;
+	text-align: left;
+	margin: 10px;
+	width: 480px;
+	float: left;
+	border-radius: 20px;
+	box-shadow: -3px -3px 0px #111111 inset; 
+	z-index: 10;
+	}
+
+#ext-work-history-box {
+	background: #FFFFFF;
+	padding: 40px;
+	text-align: left;
+	margin: 10px;
+	width: 480px;
+	float: left;
+	border-radius: 20px;
+	box-shadow: -3px -3px 0px #111111 inset; 
+	z-index: 10;
+	}
+
+.job-title {
+	background-color: #444444;
+	display: block;
+	border-radius: 4px;
+	box-shadow: 0px -2px 0px 2px #666666 inset; 
+	font-weight: 600;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	padding: 10px;
+	padding-left: 15px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	}
+
+.company-name {
+	font-weight: 550;
+	color: #222222;
+	font-size: 1.2em;
+	}
+	
+.course-title {
+	font-weight: 600;
+	color: #333333;
+	font-size: 1.0em;
+	display: block;
+	margin-top: 12px;
+	}
+	
+.school-name {
+	font-weight: 500;
+	color: #222222;
+	font-size: 1.0em;
+	}
+	
+.fine-print {
+	font-weight: 600;
+	color: #333333;
+	font-size: 0.7em;
+	display: block;
+	margin-top: 10px;
+	margin-left: 10px;
+	}
+	
+</style>
+
+<style media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" type="text/css">
+
+
+a:link {
+	font-weight: 600;
+	text-decoration: none;
+	color: #000000;
+	}
+a:visited {
+	font-weight: 600; 
+	text-decoration: none; 
+	color: #676767;
+	}
+a:hover, a:active {
+	font-weight: 600;
+	text-decoration: underline; 
+	color: #676767;
+	}
+	
+#contact {
+	background: #222222;
+	}
+	
+	</style>
+	
+<style media="print" type="text/css">
+
+body {
+	font-family: 'Open Sans', Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 0.8em;
+	}
+
+a:link {
+	font-weight: 600;
+	text-decoration: none;
+	color: #000000;
+	}
+	
+a:visited {
+	font-weight: 600; 
+	text-decoration: none; 
+	color: #676767;
+	}
+	
+a:hover, a:active {
+	font-weight: 600;
+	text-decoration: underline; 
+	color: #676767;
+	}
+
+#contact {
+	background: #222222;
+	}
+	
+#bio-pic-box {
+	display: none;
+	}
+	
+#print-pic-box {
+	float: right;
+	margin: 0px; 
+	padding: 0px; 
+	}
+	
+.job-title {
+	font-weight: 600;
+	color: #444444;
+	font-size: 1.2em;
+	}
+
+.company-name {
+	font-weight: 550;
+	color: #222222;
+	font-size: 1.1em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	}
+	
+.course-title {
+	font-weight: 600;
+	color: #333333;
+	font-size: 1.0em;
+	display: block;
+	margin-top: 12px;
+	}
+	
+.school-name {
+	font-weight: 500;
+	color: #222222;
+	font-size: 1.0em;
+	}
+	
+.fine-print {
+	font-weight: 600;
+	color: #333333;
+	font-size: 0.7em;
+	display: block;
+	margin-top: 10px;
+	margin-left: 10px;
+	}
+	
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="whole-background"></div>
+
+<div id="whole-border">
+
+<div class="content-box-1" id="en-intro">
+
+<header role="banner">
+<div id="contact-box">
+<div id="bio-pic-box"><img src="https://raw.githubusercontent.com/ErickN2000/web/main/bio-pic.png"  width="257" height="333"></img></div>
+<div id="print-pic-box"><img src="https://raw.githubusercontent.com/ErickN2000/web/main/desert-en.jpg"width="360"></img></div>
+Resume<br/>
+<span class="name"><h2>Erick Nice</h2></span><br/>
+<br/>
+<a href="mailto:ericknworks@gmail.com">ericknworks@gmail.com</a><br/>
+<br/>
+D.C., West Virginia, Virginia, Maryland<br/>
+<br/>
+USA Citizen<br/>
+<br/>
+</div>
+</header>
+
+</div>
+
+<br/>
+<br/>
+
+<div class="content-box-1" id="statement">
+<br/>
+Portfolio Samples powered by Wix<br/>
+<br/>
+<a href="https://domesticated.wixsite.com/creative">https://domesticated.wixsite.com/creative</a><br/>
+<br/>
+
+</div>
+
+<br/>
+<br/>
+
+<div class="lists" id="en-lists">
+
+<div class="content-box-1" id="objective">
+<span class="section-title"><h3>Objective:</h3></span><br/>
+To build...Knowledge, networks and experience for validation of my Journeyman applications and testing.<br/>
+<br/>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="content-box-1" id="certificates">
+<span class="section-title"><h3>Essential Certifications:</h3></span><br/>
+<ul>
+
+<li>
+Maryland Electrical Apprentice
+</li>
+<li>
+Virginia Electrical Apprentice
+</li>
+<li>
+DC Electrical Apprentice
+</li>
+<li>
+EPA 608 CFC Type 1
+</li>
+<li>
+EPA 608 CFC Type 2
+</li>
+<li>
+EPA 608 CFC Type 3
+</li>
+<li>
+EPA 608 CFC Universal
+</li>
+<li>
+OSHA 10
+</li>
+<li>
+OSHA 30
+</li>
+<li>
+Safety: PPE, Lock out Tag out, Harness, Lifts, Scaffolding
+</li>
+<li>
+Maryland Boating License
+</li>
+
+</ul>
+
+</div>
+
+<br/>
+<br/>
+
+<div class="content-box-1" class="list-column">
+<span class="section-title"><h3>Hardware:</h3></span><br/>
+<ul>
+<li>
+Hand and Power Tools
+</li>
+<li>
+Multi-meter
+</li>
+<li>
+Fluke Wiremap Tester
+</li>
+<li>
+Wacom Tablet
+</li>
+<li>
+Raspberry Pi, Pi Zero, Le Potato, Arduino and ESP32 micro controllers
+</li>
+<li>
+Trays, racks, patch panels and blades
+</li>
+<li>
+Bundling, fishing, pulling, ID'ing and toning
+</li>
+<li>
+Romex (electrical), Coaxial RG-58, RG-59, and RG-6, Ethernet (CAT5-CAT6, CAT6a), Power Over Ethernet POE, VOIP and analog phone (CAT3-CAT4)
+</li>
+<li>
+Cable planning, hidden cable running, installations, crimping, terminations and testing.
+</li>
+<li>
+Windows data recovery on hard drives using Linux or other software to retrieve.
+</li>
+<li>
+Dual/Multi-Boot OS Setup. External USB multi-boot setups: Live CDs, external hard drive installs, Grub customization, firmware flashing.
+</li>
+<li>
+Partitioning, Recovery and Formatting with Linux and DOS applications.
+</li>
+</ul>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="experience" id="en-experience">
+
+<div class="content-box-1" id="work-history-box">
+<span class="section-title"><h3>Work History:</h3></span><br/>
+
+
+<span class="job-title">Maintenance Technician</span><br/>
+<span class="company-name">Intersolutions: Maryland</span><br/>
+July 2025 to Present<br/>
+- Customer service and maintenance duties for multifamily communities, ensuring timely work order completion and high resident satisfaction.<br/>
+- Collaborates with on-site teams to complete daily assignments and streamline operations.<br/>
+- Completes unit turns and make-readies, ensuring apartments meet quality standards before move-ins.<br/>
+- Inspects and makes immediate repairs or notifying supervisors of action items.<br/>
+- General electrical, plumbing, mechanical, HVAC, key making and preventive maintenance.<br/>
+- Provides detailed reports through software management systems for work orders and inspections.<br/>
+<br/>
+<span class="job-title">Apprentice Electrician</span><br/>
+<span class="company-name">Local 24, Blue Stone Communications, Skill Force: Virginia, Maryland</span><br/>
+September 2024 to February 2025<br/>
+- Installed commercial electrical, communications, monitoring and security systems.<br/>
+- Healthcare system protocols and badging.<br/>
+- Server Blade to Nurse call installations.<br/>
+- Blueprint reading, scaling and measuring.<br/>
+- Cable bundling, fishing, pulling (Romex, Cat5, Cat6A, Fiber Optics), securing and terminating (Romex, Cat6A).<br/>
+- Conduit, rebar, Sonotube and conductor installation.<br/>
+- Jumper, switch, receptacle, split receptacle, light and camera installations.<br/>
+- Locating, toning, identifying, wiremap testing, metering and troubleshooting.<br/>
+- Trenching, forming and tamping for underground cables and coduits.<br/>
+- Night work for WMATA.<br/>
+<br/>
+<span class="job-title">Sales Associate</span><br/>
+<span class="company-name">Crossmark, a WIS International Company/Acosta Group: Annapolis, MD</span><br/>
+March 2023 to September 2024<br/>
+- Customer Service.<br/>
+- Top Regional in Production and Sales.<br/>
+- Marketing products to customers for clients and vendors while gathering feedback analytics.<br/>
+<br/>
+
+
+<br/>
+
+</div>
+
+<br/>
+
+
+<br/>
+<br/>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div id="cross" role="presentation"></div>
+<div id="cross-2" role="presentation"></div>
+<div id="white-cross" role="presentation"></div>
+<div id="red-cross-2" role="presentation"></div>
+<div class="extra1" role="presentation"></div>
+<div class="extra2" role="presentation"></div>
+<div class="extra3" role="presentation"></div>
+
+</body>
+</html>
